@@ -27,4 +27,9 @@ document.getElementById('dateInput').addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
         convertDate();
     }
+});
+
+// Convert current time when page loads
+window.addEventListener('load', () => {
+    convertDate();
 }); 

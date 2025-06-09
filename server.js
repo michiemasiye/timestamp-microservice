@@ -37,7 +37,7 @@ app.get('/api/:date?', (req, res) => {
     return res.json({ error: "Invalid Date" });
   }
 
-  // Create response object
+  // Create response object with exact format required by tests
   response = {
     unix: date.getTime(),
     utc: date.toUTCString()
